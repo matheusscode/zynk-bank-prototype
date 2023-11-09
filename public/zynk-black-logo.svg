@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9_2)">
+<rect width="200" height="200" rx="100" fill="white"/>
+<circle cx="100" cy="100" r="100" fill="#070707"/>
+<path d="M53 56H146" stroke="white" stroke-width="10"/>
+<path d="M101 131V38" stroke="white" stroke-width="10"/>
+<path d="M57 59.1335L122.813 124.843" stroke="white" stroke-opacity="0.2" stroke-width="10"/>
+<path d="M142.025 139L95 219.235" stroke="white" stroke-opacity="0.2" stroke-width="10"/>
+<path d="M61 137.396L142.396 55.9999" stroke="white" stroke-width="10"/>
+<path d="M57 139H146" stroke="white" stroke-width="10"/>
+<line x1="56.6505" y1="132.642" x2="145.65" y2="45.6424" stroke="black"/>
+<line x1="50.6505" y1="155.642" x2="139.65" y2="68.6424" stroke="black"/>
+<line x1="146" y1="66.0185" x2="146" y2="39" stroke="black" stroke-width="4"/>
+<line x1="55" y1="158.019" x2="55" y2="131" stroke="black" stroke-width="4"/>
+<line x1="82" y1="49" x2="120" y2="49" stroke="black" stroke-width="4"/>
+<line x1="96.5" y1="148" x2="96.5" y2="37" stroke="black"/>
+<line x1="106.5" y1="148.005" x2="106.5" y2="39" stroke="black"/>
+</g>
+<rect x="0.5" y="0.5" width="199" height="199" rx="99.5" stroke="#070707"/>
+<defs>
+<clipPath id="clip0_9_2">
+<rect width="200" height="200" rx="100" fill="white"/>
+</clipPath>
+</defs>
+</svg>

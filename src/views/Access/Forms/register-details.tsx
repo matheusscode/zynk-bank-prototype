@@ -1,12 +1,12 @@
-import { RegisterPersonalDetailsFormState } from "@/src/hooks/useAccess";
+import { RegisterDetailsFormState } from "@/src/hooks/useAccess";
 import { Layout } from "@/layout/Access";
 import React from "react";
 import CustomInput from "@/src/components/common/custom-input";
 
 interface RegisterDetailsProps {
-  formState: RegisterPersonalDetailsFormState;
+  formState: RegisterDetailsFormState;
   setFormState: React.Dispatch<
-    React.SetStateAction<RegisterPersonalDetailsFormState>
+    React.SetStateAction<RegisterDetailsFormState>
   >;
 }
 
@@ -15,7 +15,7 @@ const RegisterDetails: React.FC<RegisterDetailsProps> = ({
   setFormState,
 }) => {
   const handleInputChange = (
-    field: keyof RegisterPersonalDetailsFormState,
+    field: keyof RegisterDetailsFormState,
     value: string
   ) => {
     setFormState((prevState) => ({
@@ -36,7 +36,6 @@ const RegisterDetails: React.FC<RegisterDetailsProps> = ({
           type="text"
           ariaLabel="cpf-data-input"
         />
-
         <CustomInput
           value={formState.phone}
           placeholder="Insira seu telefone"
@@ -47,7 +46,6 @@ const RegisterDetails: React.FC<RegisterDetailsProps> = ({
           ariaLabel="phone-data-input"
         />
       </div>
-
       <CustomInput
         value={formState.birthday}
         placeholder="Insira sua data de nascimento"
@@ -58,7 +56,6 @@ const RegisterDetails: React.FC<RegisterDetailsProps> = ({
         ariaLabel="birthday-data-input"
         min="1940-01-01"
       />
-
       <CustomInput
         value={formState.recuperationEmail}
         placeholder="Insira um email para"

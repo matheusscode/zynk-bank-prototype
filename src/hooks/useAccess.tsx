@@ -17,7 +17,7 @@ export interface RegisterAccountFormState {
   confirmPassword: string;
 }
 
-export interface RegisterPersonalDetailsFormState {
+export interface RegisterDetailsFormState {
   gender: string;
   birthday: string;
   cpf: string;
@@ -62,7 +62,7 @@ export default function useAccess() {
       confirmPassword: "",
     });
   const [personalDetailsFormState, setPersonalDetailsFormState] =
-    React.useState<RegisterPersonalDetailsFormState>({
+    React.useState<RegisterDetailsFormState>({
       birthday: "",
       cpf: "",
       gender: "",

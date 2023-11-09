@@ -9,7 +9,7 @@ const RegisterSteps: React.FC<RegisterStepsProps> = ({ active, index }) => {
   return (
     <div className="flex items-center">
       <div
-        className={` py-2 px-4 rounded-sm max-w-[500px] w-full mx-auto${
+        className={` py-2 px-4 rounded-sm max-w-[500px] font-bold w-full mx-auto ${
           active
             ? "text-white bg-black scale-[1.2]"
             : "text-black bg-white scale-[1]"
