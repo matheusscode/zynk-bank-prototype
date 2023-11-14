@@ -33,7 +33,7 @@ const SidebarDashboard: React.FC<SidebarDashboardProps> = ({}) => {
     const hasSublist = link.subList && link.subList.length > 0;
 
     const linkElement = (
-      <Tooltip>
+      <Tooltip key={link.id}>
         <TooltipTrigger>
           <NextLink
             className={`${
@@ -61,35 +61,29 @@ const SidebarDashboard: React.FC<SidebarDashboardProps> = ({}) => {
     );
 
     const buttonElement = (
-      <Tooltip>
-        <TooltipTrigger>
-
-            <Button
-              onClick={toggleShowSubList}
-              className={`bg-transparent shadow-none hover:bg-transparent${
-                isOpen ? "flex-initial" : "justify-center"
-              } flex justify-between px-2 text-[15px] font-medium text-left rounded-lg py-3 w-full text-neutral-800 hover:bg-neutral-100`}
-            >
-              <span
-                className={`
+      <Button
+        key={link.id}
+        onClick={toggleShowSubList}
+        className={`bg-transparent shadow-none hover:bg-transparent${
+          isOpen ? "flex-initial" : "justify-center"
+        } flex justify-between px-2 text-[15px] font-medium text-left rounded-lg py-3 w-full text-neutral-800 hover:bg-neutral-100`}
+      >
+        <span
+          className={`
                   transition-all  ${
                     isOpen
                       ? "opacity-100 visible "
                       : "opacity-0 invisible absolute z-[-2]"
                   }`}
-              >
-                {link.text}
-              </span>
-              <ChevronDown
-                className={`transition-all ${isOpen ? "m-0" : "mx-auto"} ${
-                  showSubList ? "rotate-180" : "rotate-0"
-                }`}
-              />
-            </Button>
-
-          <TooltipContent side="right">Cartão de Crédito</TooltipContent>
-        </TooltipTrigger>
-      </Tooltip>
+        >
+          {link.text}
+        </span>
+        <ChevronDown
+          className={`transition-all ${isOpen ? "m-0" : "mx-auto"} ${
+            showSubList ? "rotate-180" : "rotate-0"
+          }`}
+        />
+      </Button>
     );
 
     return (
@@ -108,7 +102,7 @@ const SidebarDashboard: React.FC<SidebarDashboardProps> = ({}) => {
                 <TooltipTrigger>
                   <NextLink
                     className={`${
-                      isOpen ? "flex-initial" : "justify-center px-0 pl-0"
+                      isOpen ? "flex-initial" : "justify-center !px-0 pl-0 py-0"
                     } flex gap-2 items-center px-2 pl-4 text-[15px] font-medium hover:text-neutral-950 hover:bg-neutral-100 rounded-lg py-3 w-full`}
                     href={subLink.href}
                   >
