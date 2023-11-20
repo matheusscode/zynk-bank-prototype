@@ -101,7 +101,7 @@ const AccessForm: React.FC<AccessFormProps> = ({}) => {
             className="w-full text-center py-[1.8rem] px-[1rem] mb-6 rounded-lg font-medium text-neutral-950 bg-transparent max-w-[450px] my-0 mx-auto shadow-none hover:bg-neutral-100"
             onClick={handleGoToLogin}
           >
-            Já tem conta?
+            Já tem conta? 
           </Button>
         </div>
       </div>
