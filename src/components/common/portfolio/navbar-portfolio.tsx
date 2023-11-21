@@ -115,8 +115,8 @@ const NavbarContainerPortfolio: React.FC<
             {activeInput ? <X size={26} /> : <Search size={26} />}
           </Button>
           <div className="flex gap-4 items-center">
-            <NextLink href="/access" className="py-[0.5rem] px-[0.8rem] rounded-md text-sm text-white bg-neutral-950 border border-solid border-neutral-950">Abra sua conta</NextLink>
-            <NextLink href="/access" className="py-[0.5rem] px-[0.8rem] rounded-md text-sm border border-solid border-neutral-950 bg-transparent text-neutral-950 hover:bg-neutral-100">
+            <NextLink href="/auth" className="py-[0.5rem] px-[0.8rem] rounded-md text-sm text-white bg-neutral-950 border border-solid border-neutral-950">Abra sua conta</NextLink>
+            <NextLink href="/auth" className="py-[0.5rem] px-[0.8rem] rounded-md text-sm border border-solid border-neutral-950 bg-transparent text-neutral-950 hover:bg-neutral-100">
               Accessar
             </NextLink>
           </div>

@@ -179,7 +179,7 @@ const SidebarDashboard: React.FC<SidebarDashboardProps> = ({}) => {
           />
         </Button>
         <h1
-          className={`w-full text-lg font-light transform text-neutral-800 delay-150 transition-all ${
+          className={`w-full text-lg font-light transform text-neutral-800 transition-all ${
             isOpen
               ? "translate-x-0 opacity-100 pl-[50px]"
               : "translate-x-[-70px] opacity-0"
